@@ -16,7 +16,7 @@ jobs:
       - name: Generate left profile metrics
         uses: stalomeow/metrics@projects-v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.left.svg
           user: wzacolemak
           template: classic
@@ -35,7 +35,7 @@ jobs:
       - name: Generate right profile metrics
         uses: stalomeow/metrics@projects-v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.right.svg
           user: wzacolemak
           template: classic
