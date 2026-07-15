@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290" role="img" aria-labelledby="title desc">
+  <title id="title">wzacolemak GitHub overview</title>
+  <desc id="desc">A snapshot of public repositories, followers, following and recent activity.</desc>
+  <style>
+    .bg { fill: #ffffff; stroke: #d0d7de; }
+    .title { fill: #24292f; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sub { fill: #57606a; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .number { fill: #0969da; font: 700 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .label { fill: #57606a; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .section { fill: #24292f; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .item { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .line { stroke: #d8dee4; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; stroke: #30363d; }
+      .title, .section { fill: #f0f6fc; }
+      .sub, .label, .item { fill: #8b949e; }
+      .number { fill: #58a6ff; }
+      .line { stroke: #30363d; }
+    }
+  </style>
+  <rect class="bg" x="1" y="1" width="478" height="288" rx="10" />
+  <text class="title" x="28" y="43">wzacolemak</text>
+  <text class="sub" x="28" y="67">GitHub overview</text>
+  <line class="line" x1="28" y1="88" x2="452" y2="88" />
+  <text class="number" x="55" y="133">10</text>
+  <text class="label" x="55" y="154">Public repositories</text>
+  <text class="number" x="220" y="133">4</text>
+  <text class="label" x="220" y="154">Followers</text>
+  <text class="number" x="365" y="133">9</text>
+  <text class="label" x="365" y="154">Following</text>
+  <line class="line" x1="28" y1="177" x2="452" y2="177" />
+  <text class="section" x="28" y="208">Latest activity</text>
+  <circle cx="34" cy="234" r="4" fill="#00add8" />
+  <text class="item" x="48" y="238">cli-proxy-api-gateway-extensions · Go</text>
+  <circle cx="34" cy="260" r="4" fill="#f34b7d" />
+  <text class="item" x="48" y="264">MaaAssistantArknights · C++</text>
+</svg>

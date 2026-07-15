@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290" role="img" aria-labelledby="title desc">
+  <title id="title">wzacolemak featured projects</title>
+  <desc id="desc">Three public projects and their primary languages.</desc>
+  <style>
+    .bg { fill: #ffffff; stroke: #d0d7de; }
+    .title { fill: #24292f; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sub { fill: #57606a; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .repo { fill: #0969da; font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .lang { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .line { stroke: #d8dee4; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; stroke: #30363d; }
+      .title { fill: #f0f6fc; }
+      .sub, .lang { fill: #8b949e; }
+      .repo { fill: #58a6ff; }
+      .line { stroke: #30363d; }
+    }
+  </style>
+  <rect class="bg" x="1" y="1" width="478" height="288" rx="10" />
+  <text class="title" x="28" y="43">Featured projects</text>
+  <text class="sub" x="28" y="67">A snapshot of recent public work</text>
+  <line class="line" x1="28" y1="88" x2="452" y2="88" />
+  <circle cx="34" cy="116" r="5" fill="#00add8" />
+  <text class="repo" x="50" y="121">cli-proxy-api-gateway-extensions</text>
+  <text class="lang" x="50" y="142">Go</text>
+  <line class="line" x1="28" y1="157" x2="452" y2="157" />
+  <circle cx="34" cy="181" r="5" fill="#f34b7d" />
+  <text class="repo" x="50" y="186">MaaAssistantArknights</text>
+  <text class="lang" x="50" y="207">C++</text>
+  <line class="line" x1="28" y1="222" x2="452" y2="222" />
+  <circle cx="34" cy="246" r="5" fill="#b07219" />
+  <text class="repo" x="50" y="251">StatTracker</text>
+  <text class="lang" x="50" y="272">Java</text>
+</svg>
