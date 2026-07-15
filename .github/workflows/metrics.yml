@@ -14,7 +14,7 @@ jobs:
       contents: write
     steps:
       - name: Generate left profile metrics
-        uses: lowlighter/metrics@latest
+        uses: yobson1/metrics@b99f7cd27980d0761a668ecc8f1c08f0fa57df15
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.left.svg
@@ -25,7 +25,7 @@ jobs:
           config_order: base.header, base.activity+community
 
       - name: Generate right profile metrics
-        uses: lowlighter/metrics@latest
+        uses: yobson1/metrics@b99f7cd27980d0761a668ecc8f1c08f0fa57df15
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: metrics.right.svg
