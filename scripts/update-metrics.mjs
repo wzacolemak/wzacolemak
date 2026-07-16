@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const USER = process.env.PROFILE_USER || "wzacolemak";
+const DISPLAY_NAME = process.env.PROFILE_NAME || "colemak";
 const TOKEN = process.env.GITHUB_TOKEN;
 const DRY_RUN = process.env.DRY_RUN === "1";
 
@@ -106,7 +107,7 @@ const profileData = await graphql(
   `query Profile($login: String!) {
     user(login: $login) {
       createdAt
-      avatarUrl(size: 64)
+      avatarUrl(size: 96)
       followers { totalCount }
       following { totalCount }
       organizations(first: 100) { totalCount }
@@ -227,7 +228,7 @@ const repositoryCount = repositories.length;
 const joinedYears = yearsSince(createdAt, now);
 
 const leftSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="500" viewBox="0 0 480 500" role="img" aria-labelledby="title desc">
-  <title id="title">${xml(USER)} GitHub activity and languages</title>
+  <title id="title">${xml(DISPLAY_NAME)} GitHub activity and languages</title>
   <desc id="desc">Accumulated GitHub activity, community statistics and language distribution.</desc>
   <style>
     svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
@@ -249,13 +250,14 @@ const leftSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="500
   </style>
   <rect class="canvas" width="480" height="500" />
   <defs>
-    <clipPath id="avatar"><circle cx="24" cy="30" r="10" /></clipPath>
+    <clipPath id="avatar"><circle cx="48" cy="41" r="24" /></clipPath>
     <clipPath id="language-bar"><rect x="24" y="352" width="432" height="14" rx="7" /></clipPath>
   </defs>
 
-  <image href="${avatarDataUri}" x="14" y="20" width="20" height="20" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar)" />
-  <text class="title" x="42" y="36">${xml(USER)}</text>
-  <text class="body" x="24" y="60">Joined GitHub ${joinedYears} years ago · ${formatNumber(repositoryCount)} public repositories · ${formatNumber(profile.followers.totalCount)} followers</text>
+  <image href="${avatarDataUri}" x="24" y="17" width="48" height="48" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar)" />
+  <text class="title" x="84" y="32">${xml(DISPLAY_NAME)}</text>
+  <text class="body" x="84" y="51">Joined GitHub ${joinedYears} years ago</text>
+  <text class="body" x="84" y="68">${formatNumber(repositoryCount)} public repositories · ${formatNumber(profile.followers.totalCount)} followers</text>
 
   <line class="rule" x1="24" y1="82" x2="456" y2="82" />
   <text class="heading" x="24" y="112">Activity</text>

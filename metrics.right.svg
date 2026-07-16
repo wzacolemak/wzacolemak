@@ -30,10 +30,10 @@
   <text class="name" x="64" y="175">Polyglot</text><text class="body" x="64" y="194">20 programming languages detected</text>
   <line class="rule" x1="24" y1="214" x2="456" y2="214" />
   <circle cx="42" cy="244" r="11" fill="#1f883d" /><text x="42" y="249" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">C</text>
-  <text class="name" x="64" y="241">Community member</text><text class="body" x="64" y="260">Member of 0 organizations</text>
+  <text class="name" x="64" y="241">Community member</text><text class="body" x="64" y="260">Member of 2 organizations</text>
   <line class="rule" x1="24" y1="280" x2="456" y2="280" />
   <circle cx="42" cy="310" r="11" fill="#bf8700" /><text x="42" y="315" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">★</text>
-  <text class="name" x="64" y="307">Curator</text><text class="body" x="64" y="326">Starred 37 public repositories</text>
+  <text class="name" x="64" y="307">Curator</text><text class="body" x="64" y="326">Starred 38 public repositories</text>
   <line class="rule" x1="24" y1="350" x2="456" y2="350" />
   <text class="heading" x="24" y="380">Featured projects</text>
   <circle cx="30" cy="405" r="4" fill="#00add8" /><text class="name" x="42" y="410">cli-proxy-api-gateway-extensions</text><text class="small" x="42" y="428">Go · updated Jul 2026</text>

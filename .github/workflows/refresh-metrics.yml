@@ -29,6 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USER: wzacolemak
+          PROFILE_NAME: colemak
 
       - name: Commit refreshed metrics
         run: |
