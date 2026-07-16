@@ -34,7 +34,7 @@
   <circle cx="52" cy="248" r="6" fill="#bf8700" /><text class="name" x="70" y="253">Curator</text><text class="detail" x="268" y="253">38 starred repositories</text>
 
   <text class="section" x="28" y="321">Featured projects</text>
-  <text class="sub" x="180" y="321">recently updated public work</text>
+  <text class="sub" x="202" y="321">recently updated public work</text>
   <rect class="panel" x="28" y="336" width="424" height="148" rx="8" />
   <circle cx="52" cy="365" r="5" fill="#00add8" />
   <text class="name" x="68" y="369">cli-proxy-api-gateway-extensions</text>
