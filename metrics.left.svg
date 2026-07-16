@@ -1,37 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290" role="img" aria-labelledby="title desc">
-  <title id="title">wzacolemak GitHub overview</title>
-  <desc id="desc">A snapshot of public repositories, followers, following and recent activity.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="700" viewBox="0 0 480 700" role="img" aria-labelledby="title desc">
+  <title id="title">wzacolemak GitHub metrics</title>
+  <desc id="desc">GitHub activity, community statistics and most used languages for wzacolemak.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
     .title { fill: #24292f; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .sub { fill: #57606a; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .number { fill: #0969da; font: 700 27px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .label { fill: #57606a; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .section { fill: #24292f; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .item { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sub { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .section { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .metric { fill: #24292f; font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .muted { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .lang { fill: #24292f; font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .percent { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .line { stroke: #d8dee4; }
+    .bar { fill: #0969da; }
+    .bar-bg { fill: #d8dee4; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; stroke: #30363d; }
-      .title, .section { fill: #f0f6fc; }
-      .sub, .label, .item { fill: #8b949e; }
-      .number { fill: #58a6ff; }
+      .title, .section, .metric, .lang { fill: #f0f6fc; }
+      .sub, .muted, .percent { fill: #8b949e; }
       .line { stroke: #30363d; }
+      .bar { fill: #58a6ff; }
+      .bar-bg { fill: #30363d; }
     }
   </style>
-  <rect class="bg" x="1" y="1" width="478" height="288" rx="10" />
+  <rect class="bg" x="1" y="1" width="478" height="698" rx="10" />
+
   <text class="title" x="28" y="43">wzacolemak</text>
-  <text class="sub" x="28" y="67">GitHub overview</text>
-  <line class="line" x1="28" y1="88" x2="452" y2="88" />
-  <text class="number" x="55" y="133">10</text>
-  <text class="label" x="55" y="154">Public repositories</text>
-  <text class="number" x="220" y="133">4</text>
-  <text class="label" x="220" y="154">Followers</text>
-  <text class="number" x="365" y="133">9</text>
-  <text class="label" x="365" y="154">Following</text>
-  <line class="line" x1="28" y1="177" x2="452" y2="177" />
-  <text class="section" x="28" y="208">Latest activity</text>
-  <circle cx="34" cy="234" r="4" fill="#00add8" />
-  <text class="item" x="48" y="238">cli-proxy-api-gateway-extensions · Go</text>
-  <circle cx="34" cy="260" r="4" fill="#f34b7d" />
-  <text class="item" x="48" y="264">MaaAssistantArknights · C++</text>
+  <text class="sub" x="28" y="67">Joined GitHub 6 years ago · Followed by 4 users</text>
+  <text class="sub" x="28" y="87">Contributed to 4 repositories in the last 12 months</text>
+  <line class="line" x1="28" y1="108" x2="452" y2="108" />
+
+  <text class="section" x="28" y="140">Activity</text>
+  <text class="sub" x="112" y="140">last 12 months</text>
+  <text class="metric" x="28" y="169">14 Commits</text>
+  <text class="metric" x="183" y="169">0 PR reviews</text>
+  <text class="metric" x="334" y="169">4 PRs opened</text>
+  <text class="metric" x="28" y="196">3 Issues opened</text>
+  <text class="metric" x="183" y="196">8 Issues / PRs commented</text>
+  <line class="line" x1="28" y1="218" x2="452" y2="218" />
+
+  <text class="section" x="28" y="250">Community stats</text>
+  <text class="metric" x="28" y="279">Member of 2 organizations</text>
+  <text class="metric" x="261" y="279">Following 9 users</text>
+  <text class="metric" x="28" y="306">Sponsoring 0 repositories</text>
+  <text class="metric" x="261" y="306">Starred 38 repositories</text>
+  <text class="metric" x="28" y="333">Watching 1 repository</text>
+  <line class="line" x1="28" y1="355" x2="452" y2="355" />
+
+  <text class="section" x="28" y="387">20 Languages</text>
+  <text class="sub" x="164" y="387">most used by tracked file bytes</text>
+
+  <text class="lang" x="28" y="419">TypeScript</text>
+  <text class="percent" x="422" y="419" text-anchor="end">65.2%</text>
+  <rect class="bar-bg" x="28" y="428" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="428" width="276" height="7" rx="3.5" />
+
+  <text class="lang" x="28" y="462">Go</text>
+  <text class="percent" x="422" y="462" text-anchor="end">17.2%</text>
+  <rect class="bar-bg" x="28" y="471" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="471" width="73" height="7" rx="3.5" />
+
+  <text class="lang" x="28" y="505">HTML</text>
+  <text class="percent" x="422" y="505" text-anchor="end">5.6%</text>
+  <rect class="bar-bg" x="28" y="514" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="514" width="24" height="7" rx="3.5" />
+
+  <text class="lang" x="28" y="548">C++</text>
+  <text class="percent" x="422" y="548" text-anchor="end">4.8%</text>
+  <rect class="bar-bg" x="28" y="557" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="557" width="20" height="7" rx="3.5" />
+
+  <text class="lang" x="28" y="591">C#</text>
+  <text class="percent" x="422" y="591" text-anchor="end">4.5%</text>
+  <rect class="bar-bg" x="28" y="600" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="600" width="19" height="7" rx="3.5" />
+
+  <text class="lang" x="28" y="634">Python</text>
+  <text class="percent" x="422" y="634" text-anchor="end">1.7%</text>
+  <rect class="bar-bg" x="28" y="643" width="424" height="7" rx="3.5" />
+  <rect class="bar" x="28" y="643" width="7" height="7" rx="3.5" />
+
+  <text class="muted" x="28" y="680">Snapshot generated 2026-07-16</text>
 </svg>
