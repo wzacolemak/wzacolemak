@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="500" viewBox="0 0 480 500" role="img" aria-labelledby="title desc">
   <title id="title">wzacolemak GitHub activity and languages</title>
-  <desc id="desc">A compact GitHub metrics panel with activity, community statistics and language distribution.</desc>
+  <desc id="desc">Accumulated GitHub activity, community statistics and language distribution.</desc>
   <style>
     svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .canvas { fill: #ffffff; }
@@ -19,19 +19,22 @@
       .muted-bar { fill: #30363d; }
     }
   </style>
-
   <rect class="canvas" width="480" height="500" />
+  <defs>
+    <clipPath id="avatar"><circle cx="24" cy="30" r="10" /></clipPath>
+    <clipPath id="language-bar"><rect x="24" y="352" width="432" height="14" rx="7" /></clipPath>
+  </defs>
 
-  <circle cx="24" cy="30" r="9" fill="#0969da" />
+  <image href="data:image/jpeg;base64,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" x="14" y="20" width="20" height="20" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar)" />
   <text class="title" x="42" y="36">wzacolemak</text>
   <text class="body" x="24" y="60">Joined GitHub 6 years ago · 10 public repositories · 4 followers</text>
 
   <line class="rule" x1="24" y1="82" x2="456" y2="82" />
   <text class="heading" x="24" y="112">Activity</text>
-  <text class="small" x="92" y="112">last 12 months</text>
-  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">14 commits</text>
+  <text class="small" x="92" y="112">accumulated since joining GitHub</text>
+  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">51 commits</text>
   <circle cx="178" cy="137" r="4" fill="#8250df" /><text class="strong" x="190" y="142">4 pull requests</text>
-  <circle cx="348" cy="137" r="4" fill="#1a7f37" /><text class="strong" x="360" y="142">3 issues</text>
+  <circle cx="348" cy="137" r="4" fill="#1a7f37" /><text class="strong" x="360" y="142">4 issues</text>
   <circle cx="30" cy="166" r="4" fill="#bf8700" /><text class="strong" x="42" y="171">8 commented items</text>
   <circle cx="178" cy="166" r="4" fill="#57606a" /><text class="strong" x="190" y="171">0 reviews</text>
 
@@ -41,26 +44,26 @@
   <circle cx="178" cy="249" r="4" fill="#0969da" /><text class="strong" x="190" y="254">9 following</text>
   <circle cx="321" cy="249" r="4" fill="#bf8700" /><text class="strong" x="333" y="254">38 starred</text>
   <circle cx="30" cy="278" r="4" fill="#8250df" /><text class="strong" x="42" y="283">1 watching</text>
-  <circle cx="178" cy="278" r="4" fill="#57606a" /><text class="strong" x="190" y="283">0 sponsoring</text>
+  <circle cx="178" cy="278" r="4" fill="#57606a" /><text class="strong" x="190" y="283">4 followers</text>
 
   <line class="rule" x1="24" y1="306" x2="456" y2="306" />
   <text class="heading" x="24" y="336">20 Languages</text>
   <text class="small" x="136" y="336">most used by tracked file bytes</text>
-
   <rect class="muted-bar" x="24" y="352" width="432" height="14" rx="7" />
-  <path d="M31 352h275v14H31a7 7 0 0 1-7-7 7 7 0 0 1 7-7z" fill="#3178c6" />
-  <rect x="306" y="352" width="74" height="14" fill="#00add8" />
-  <rect x="380" y="352" width="24" height="14" fill="#e34c26" />
-  <rect x="404" y="352" width="21" height="14" fill="#f34b7d" />
-  <rect x="425" y="352" width="19" height="14" fill="#178600" />
-  <path d="M444 352h5a7 7 0 0 1 7 7 7 7 0 0 1-7 7h-5z" fill="#3572a5" />
-
+  <g clip-path="url(#language-bar)">
+    <rect x="24.00" y="352" width="281.69" height="14" fill="#3178c6" />
+    <rect x="305.69" y="352" width="74.32" height="14" fill="#00add8" />
+    <rect x="380.01" y="352" width="24.00" height="14" fill="#e34c26" />
+    <rect x="404.02" y="352" width="20.84" height="14" fill="#f34b7d" />
+    <rect x="424.85" y="352" width="19.23" height="14" fill="#178600" />
+    <rect x="444.08" y="352" width="7.34" height="14" fill="#3572a5" />
+    <rect x="451.43" y="352" width="4.57" height="14" fill="#8c959f" />
+  </g>
   <circle cx="29" cy="395" r="4" fill="#3178c6" /><text class="body" x="41" y="400">TypeScript</text><text class="small" x="208" y="400" text-anchor="end">65.2%</text>
   <circle cx="29" cy="423" r="4" fill="#00add8" /><text class="body" x="41" y="428">Go</text><text class="small" x="208" y="428" text-anchor="end">17.2%</text>
   <circle cx="29" cy="451" r="4" fill="#e34c26" /><text class="body" x="41" y="456">HTML</text><text class="small" x="208" y="456" text-anchor="end">5.6%</text>
   <circle cx="251" cy="395" r="4" fill="#f34b7d" /><text class="body" x="263" y="400">C++</text><text class="small" x="456" y="400" text-anchor="end">4.8%</text>
   <circle cx="251" cy="423" r="4" fill="#178600" /><text class="body" x="263" y="428">C#</text><text class="small" x="456" y="428" text-anchor="end">4.5%</text>
   <circle cx="251" cy="451" r="4" fill="#3572a5" /><text class="body" x="263" y="456">Python</text><text class="small" x="456" y="456" text-anchor="end">1.7%</text>
-
   <text class="small" x="24" y="486">Snapshot generated 2026-07-16</text>
 </svg>
