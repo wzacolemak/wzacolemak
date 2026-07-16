@@ -59,6 +59,12 @@ function formatNumber(value) {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
+function formatBytes(bytes) {
+  if (bytes >= 1_000_000) return `${(bytes / 1_000_000).toFixed(2)} MB`;
+  if (bytes >= 1_000) return `${(bytes / 1_000).toFixed(1)} kB`;
+  return `${bytes} B`;
+}
+
 function yearsSince(date, now) {
   let years = now.getUTCFullYear() - date.getUTCFullYear();
   const beforeAnniversary =
@@ -219,7 +225,7 @@ const legendPositions = [
 const languageLegend = topLanguages
   .map((language, index) => {
     const [cx, cy, tx, ty, px] = legendPositions[index];
-    return `<circle cx="${cx}" cy="${cy}" r="4" fill="${colorFor(language.name, index)}" /><text class="body" x="${tx}" y="${ty}">${xml(language.name)}</text><text class="small" x="${px}" y="${ty}" text-anchor="end">${language.percent.toFixed(1)}%</text>`;
+    return `<circle cx="${cx}" cy="${cy}" r="4" fill="${colorFor(language.name, index)}" /><text class="body" x="${tx}" y="${ty}">${xml(language.name)}</text><text class="small" x="${px}" y="${ty}" text-anchor="end">${formatBytes(language.bytes)} · ${language.percent.toFixed(1)}%</text>`;
   })
   .join("\n  ");
 
