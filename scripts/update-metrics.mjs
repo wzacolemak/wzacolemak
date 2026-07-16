@@ -103,8 +103,91 @@ const languageColors = {
 
 const fallbackColors = ["#0969da", "#8250df", "#1f883d", "#bf8700", "#cf222e", "#57606a"];
 
+const extensionLanguages = new Map([
+  [".ts", "TypeScript"], [".tsx", "TypeScript"],
+  [".go", "Go"],
+  [".html", "HTML"], [".htm", "HTML"],
+  [".cpp", "C++"], [".cc", "C++"], [".cxx", "C++"], [".hpp", "C++"], [".hh", "C++"], [".hxx", "C++"],
+  [".cs", "C#"],
+  [".py", "Python"],
+  [".c", "C"], [".h", "C"],
+  [".java", "Java"],
+  [".rs", "Rust"],
+  [".kt", "Kotlin"], [".kts", "Kotlin"],
+  [".sh", "Shell"], [".bash", "Shell"], [".zsh", "Shell"],
+  [".dart", "Dart"],
+  [".ps1", "PowerShell"],
+  [".m", "Objective-C"], [".mm", "Objective-C++"],
+  [".md", "Markdown"],
+  [".js", "JavaScript"], [".jsx", "JavaScript"], [".mjs", "JavaScript"], [".cjs", "JavaScript"],
+  [".css", "CSS"], [".scss", "SCSS"], [".less", "Less"],
+  [".vue", "Vue"], [".svelte", "Svelte"],
+  [".yml", "YAML"], [".yaml", "YAML"],
+  [".rb", "Ruby"], [".php", "PHP"], [".swift", "Swift"],
+]);
+
 function colorFor(language, index) {
   return languageColors[language] || fallbackColors[index % fallbackColors.length];
+}
+
+function languageForPath(path) {
+  const fileName = path.split("/").at(-1);
+  if (fileName === "Dockerfile" || fileName.startsWith("Dockerfile.")) return "Dockerfile";
+  if (fileName === "Makefile" || fileName.startsWith("Makefile.")) return "Makefile";
+  const dot = fileName.lastIndexOf(".");
+  return dot === -1 ? null : extensionLanguages.get(fileName.slice(dot).toLowerCase()) || null;
+}
+
+function addLanguageBytes(target, language, bytes) {
+  if (!language || !Number.isFinite(bytes) || bytes <= 0) return;
+  target.set(language, (target.get(language) || 0) + bytes);
+}
+
+async function addForkChanges(languageBytes, repository) {
+  const details = await rest(`/repos/${USER}/${encodeURIComponent(repository.name)}`);
+  const parent = details.parent;
+  if (!parent) {
+    console.warn(`Skipping fork ${repository.name}: parent repository is unavailable`);
+    return;
+  }
+
+  const base = encodeURIComponent(parent.default_branch);
+  const head = encodeURIComponent(`${USER}:${details.default_branch}`);
+  let comparison;
+  try {
+    comparison = await rest(`/repos/${parent.full_name}/compare/${base}...${head}`);
+  } catch (error) {
+    if (error.message.includes("GitHub REST 404")) {
+      console.log(`Excluding fork without comparable upstream history: ${repository.name}`);
+      return;
+    }
+    throw error;
+  }
+  if (comparison.ahead_by === 0) {
+    console.log(`Excluding unmodified fork: ${repository.name}`);
+    return;
+  }
+
+  const tree = await rest(`/repos/${USER}/${encodeURIComponent(repository.name)}/git/trees/${encodeURIComponent(details.default_branch)}?recursive=1`);
+  if (tree.truncated) {
+    console.warn(`Repository tree was truncated for ${repository.name}; some changed files may use diff sizes`);
+  }
+  const blobSizes = new Map(
+    tree.tree
+      .filter((entry) => entry.type === "blob")
+      .map((entry) => [entry.path, entry.size || 0]),
+  );
+
+  let includedFiles = 0;
+  for (const file of comparison.files || []) {
+    if (file.status === "removed") continue;
+    const language = languageForPath(file.filename);
+    if (!language) continue;
+    const bytes = blobSizes.get(file.filename) || file.changes || 0;
+    addLanguageBytes(languageBytes, language, bytes);
+    includedFiles += 1;
+  }
+  console.log(`Including ${includedFiles} changed source files from fork: ${repository.name}`);
 }
 
 const now = new Date();
@@ -174,9 +257,13 @@ const languageBytes = new Map();
 
 for (const repository of repositories) {
   try {
-    const languages = await rest(`/repos/${USER}/${encodeURIComponent(repository.name)}/languages`);
-    for (const [language, bytes] of Object.entries(languages)) {
-      languageBytes.set(language, (languageBytes.get(language) || 0) + bytes);
+    if (repository.fork) {
+      await addForkChanges(languageBytes, repository);
+    } else {
+      const repositoryLanguages = await rest(`/repos/${USER}/${encodeURIComponent(repository.name)}/languages`);
+      for (const [language, bytes] of Object.entries(repositoryLanguages)) {
+        addLanguageBytes(languageBytes, language, bytes);
+      }
     }
   } catch (error) {
     console.warn(`Skipping language data for ${repository.name}: ${error.message}`);

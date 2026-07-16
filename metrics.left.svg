@@ -42,29 +42,29 @@
 
   <line class="rule" x1="24" y1="194" x2="456" y2="194" />
   <text class="heading" x="24" y="224">Community stats</text>
-  <circle cx="30" cy="249" r="4" fill="#1f883d" /><text class="strong" x="42" y="254">0 organizations</text>
+  <circle cx="30" cy="249" r="4" fill="#1f883d" /><text class="strong" x="42" y="254">2 organizations</text>
   <circle cx="178" cy="249" r="4" fill="#0969da" /><text class="strong" x="190" y="254">9 following</text>
-  <circle cx="321" cy="249" r="4" fill="#bf8700" /><text class="strong" x="333" y="254">37 starred</text>
+  <circle cx="321" cy="249" r="4" fill="#bf8700" /><text class="strong" x="333" y="254">38 starred</text>
   <circle cx="30" cy="278" r="4" fill="#8250df" /><text class="strong" x="42" y="283">1 watching</text>
   <circle cx="178" cy="278" r="4" fill="#57606a" /><text class="strong" x="190" y="283">4 followers</text>
 
   <line class="rule" x1="24" y1="306" x2="456" y2="306" />
-  <text class="heading" x="24" y="336">20 Languages</text>
+  <text class="heading" x="24" y="336">12 Languages</text>
   <text class="small" x="136" y="336">most used by tracked file bytes</text>
   <rect class="muted-bar" x="24" y="352" width="432" height="14" rx="7" />
   <g clip-path="url(#language-bar)">
-    <rect x="24.00" y="352" width="281.59" height="14" fill="#3178c6" />
-    <rect x="305.59" y="352" width="74.30" height="14" fill="#00add8" />
-    <rect x="379.89" y="352" width="24.00" height="14" fill="#e34c26" />
-    <rect x="403.89" y="352" width="20.83" height="14" fill="#f34b7d" />
-    <rect x="424.71" y="352" width="19.23" height="14" fill="#178600" />
-    <rect x="443.94" y="352" width="7.34" height="14" fill="#3572a5" />
-    <rect x="451.28" y="352" width="4.72" height="14" fill="#8c959f" />
+    <rect x="24.00" y="352" width="306.92" height="14" fill="#00add8" />
+    <rect x="330.92" y="352" width="99.35" height="14" fill="#e34c26" />
+    <rect x="430.27" y="352" width="8.54" height="14" fill="#178600" />
+    <rect x="438.80" y="352" width="5.85" height="14" fill="#3572a5" />
+    <rect x="444.66" y="352" width="4.66" height="14" fill="#f34b7d" />
+    <rect x="449.32" y="352" width="3.88" height="14" fill="#b07219" />
+    <rect x="453.20" y="352" width="2.80" height="14" fill="#8c959f" />
   </g>
-  <circle cx="29" cy="395" r="4" fill="#3178c6" /><text class="body" x="41" y="400">TypeScript</text><text class="small" x="208" y="400" text-anchor="end">30.33 MB · 65.2%</text>
-  <circle cx="29" cy="423" r="4" fill="#00add8" /><text class="body" x="41" y="428">Go</text><text class="small" x="208" y="428" text-anchor="end">8.00 MB · 17.2%</text>
-  <circle cx="29" cy="451" r="4" fill="#e34c26" /><text class="body" x="41" y="456">HTML</text><text class="small" x="208" y="456" text-anchor="end">2.58 MB · 5.6%</text>
-  <circle cx="251" cy="395" r="4" fill="#f34b7d" /><text class="body" x="263" y="400">C++</text><text class="small" x="456" y="400" text-anchor="end">2.24 MB · 4.8%</text>
-  <circle cx="251" cy="423" r="4" fill="#178600" /><text class="body" x="263" y="428">C#</text><text class="small" x="456" y="428" text-anchor="end">2.07 MB · 4.5%</text>
-  <circle cx="251" cy="451" r="4" fill="#3572a5" /><text class="body" x="263" y="456">Python</text><text class="small" x="456" y="456" text-anchor="end">790.8 kB · 1.7%</text>
+  <circle cx="29" cy="395" r="4" fill="#00add8" /><text class="body" x="41" y="400">Go</text><text class="small" x="208" y="400" text-anchor="end">7.99 MB · 71.0%</text>
+  <circle cx="29" cy="423" r="4" fill="#e34c26" /><text class="body" x="41" y="428">HTML</text><text class="small" x="208" y="428" text-anchor="end">2.58 MB · 23.0%</text>
+  <circle cx="29" cy="451" r="4" fill="#178600" /><text class="body" x="41" y="456">C#</text><text class="small" x="208" y="456" text-anchor="end">222.1 kB · 2.0%</text>
+  <circle cx="251" cy="395" r="4" fill="#3572a5" /><text class="body" x="263" y="400">Python</text><text class="small" x="456" y="400" text-anchor="end">152.3 kB · 1.4%</text>
+  <circle cx="251" cy="423" r="4" fill="#f34b7d" /><text class="body" x="263" y="428">C++</text><text class="small" x="456" y="428" text-anchor="end">121.4 kB · 1.1%</text>
+  <circle cx="251" cy="451" r="4" fill="#b07219" /><text class="body" x="263" y="456">Java</text><text class="small" x="456" y="456" text-anchor="end">101.0 kB · 0.9%</text>
 </svg>
