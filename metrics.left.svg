@@ -5,7 +5,7 @@
     svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .canvas { fill: #ffffff; }
     .title { fill: #24292f; font-size: 20px; font-weight: 700; }
-    .heading { fill: #24292f; font-size: 16px; font-weight: 600; }
+    .heading { fill: #0969da; font-size: 16px; font-weight: 600; }
     .body { fill: #57606a; font-size: 13px; }
     .strong { fill: #24292f; font-size: 13px; font-weight: 600; }
     .small { fill: #57606a; font-size: 12px; }
@@ -13,7 +13,8 @@
     .muted-bar { fill: #d8dee4; }
     @media (prefers-color-scheme: dark) {
       .canvas { fill: #0d1117; }
-      .title, .heading, .strong { fill: #f0f6fc; }
+      .title, .strong { fill: #f0f6fc; }
+      .heading { fill: #58a6ff; }
       .body, .small { fill: #8b949e; }
       .rule { stroke: #30363d; }
       .muted-bar { fill: #30363d; }
@@ -66,5 +67,4 @@
   <circle cx="251" cy="395" r="4" fill="#f34b7d" /><text class="body" x="263" y="400">C++</text><text class="small" x="456" y="400" text-anchor="end">4.8%</text>
   <circle cx="251" cy="423" r="4" fill="#178600" /><text class="body" x="263" y="428">C#</text><text class="small" x="456" y="428" text-anchor="end">4.5%</text>
   <circle cx="251" cy="451" r="4" fill="#3572a5" /><text class="body" x="263" y="456">Python</text><text class="small" x="456" y="456" text-anchor="end">1.7%</text>
-  <text class="small" x="24" y="486">Snapshot generated 2026-07-16</text>
 </svg>

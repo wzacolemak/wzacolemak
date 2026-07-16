@@ -223,7 +223,6 @@ const languageLegend = topLanguages
   })
   .join("\n  ");
 
-const snapshotDate = now.toISOString().slice(0, 10);
 const repositoryCount = repositories.length;
 const joinedYears = yearsSince(createdAt, now);
 
@@ -234,7 +233,7 @@ const leftSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="500
     svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .canvas { fill: #ffffff; }
     .title { fill: #24292f; font-size: 20px; font-weight: 700; }
-    .heading { fill: #24292f; font-size: 16px; font-weight: 600; }
+    .heading { fill: #0969da; font-size: 16px; font-weight: 600; }
     .body { fill: #57606a; font-size: 13px; }
     .strong { fill: #24292f; font-size: 13px; font-weight: 600; }
     .small { fill: #57606a; font-size: 12px; }
@@ -242,7 +241,8 @@ const leftSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="500
     .muted-bar { fill: #d8dee4; }
     @media (prefers-color-scheme: dark) {
       .canvas { fill: #0d1117; }
-      .title, .heading, .strong { fill: #f0f6fc; }
+      .title, .strong { fill: #f0f6fc; }
+      .heading { fill: #58a6ff; }
       .body, .small { fill: #8b949e; }
       .rule { stroke: #30363d; }
       .muted-bar { fill: #30363d; }
@@ -284,7 +284,6 @@ const leftSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="500
     ${barSegments}
   </g>
   ${languageLegend}
-  <text class="small" x="24" y="486">Snapshot generated ${snapshotDate}</text>
 </svg>
 `;
 
@@ -307,15 +306,15 @@ const rightSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="50
   <style>
     svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
     .canvas { fill: #ffffff; }
-    .title { fill: #24292f; font-size: 20px; font-weight: 700; }
-    .heading { fill: #24292f; font-size: 16px; font-weight: 600; }
+    .title { fill: #0969da; font-size: 20px; font-weight: 700; }
+    .heading { fill: #0969da; font-size: 16px; font-weight: 600; }
     .name { fill: #0969da; font-size: 14px; font-weight: 600; }
     .body { fill: #57606a; font-size: 13px; }
     .small { fill: #57606a; font-size: 12px; }
     .rule { stroke: #d8dee4; }
     @media (prefers-color-scheme: dark) {
       .canvas { fill: #0d1117; }
-      .title, .heading { fill: #f0f6fc; }
+      .title, .heading { fill: #58a6ff; }
       .name { fill: #58a6ff; }
       .body, .small { fill: #8b949e; }
       .rule { stroke: #30363d; }
@@ -340,7 +339,6 @@ const rightSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="50
   <line class="rule" x1="24" y1="350" x2="456" y2="350" />
   <text class="heading" x="24" y="380">Featured projects</text>
   ${projectRows}
-  <text class="small" x="24" y="492">Snapshot generated ${snapshotDate}</text>
 </svg>
 `;
 
