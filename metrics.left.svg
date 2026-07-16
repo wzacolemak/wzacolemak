@@ -34,7 +34,7 @@
   <line class="rule" x1="24" y1="82" x2="456" y2="82" />
   <text class="heading" x="24" y="112">Activity</text>
   <text class="small" x="92" y="112">accumulated since joining GitHub</text>
-  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">55 commits</text>
+  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">56 commits</text>
   <circle cx="178" cy="137" r="4" fill="#8250df" /><text class="strong" x="190" y="142">4 pull requests</text>
   <circle cx="348" cy="137" r="4" fill="#1a7f37" /><text class="strong" x="360" y="142">4 issues</text>
   <circle cx="30" cy="166" r="4" fill="#bf8700" /><text class="strong" x="42" y="171">8 commented items</text>
@@ -42,9 +42,9 @@
 
   <line class="rule" x1="24" y1="194" x2="456" y2="194" />
   <text class="heading" x="24" y="224">Community stats</text>
-  <circle cx="30" cy="249" r="4" fill="#1f883d" /><text class="strong" x="42" y="254">2 organizations</text>
+  <circle cx="30" cy="249" r="4" fill="#1f883d" /><text class="strong" x="42" y="254">0 organizations</text>
   <circle cx="178" cy="249" r="4" fill="#0969da" /><text class="strong" x="190" y="254">9 following</text>
-  <circle cx="321" cy="249" r="4" fill="#bf8700" /><text class="strong" x="333" y="254">38 starred</text>
+  <circle cx="321" cy="249" r="4" fill="#bf8700" /><text class="strong" x="333" y="254">37 starred</text>
   <circle cx="30" cy="278" r="4" fill="#8250df" /><text class="strong" x="42" y="283">1 watching</text>
   <circle cx="178" cy="278" r="4" fill="#57606a" /><text class="strong" x="190" y="283">4 followers</text>
 
@@ -53,13 +53,13 @@
   <text class="small" x="136" y="336">most used by tracked file bytes</text>
   <rect class="muted-bar" x="24" y="352" width="432" height="14" rx="7" />
   <g clip-path="url(#language-bar)">
-    <rect x="24.00" y="352" width="306.92" height="14" fill="#00add8" />
-    <rect x="330.92" y="352" width="99.35" height="14" fill="#e34c26" />
-    <rect x="430.27" y="352" width="8.54" height="14" fill="#178600" />
-    <rect x="438.80" y="352" width="5.85" height="14" fill="#3572a5" />
-    <rect x="444.66" y="352" width="4.66" height="14" fill="#f34b7d" />
-    <rect x="449.32" y="352" width="3.88" height="14" fill="#b07219" />
-    <rect x="453.20" y="352" width="2.80" height="14" fill="#8c959f" />
+    <rect x="24.00" y="352" width="306.83" height="14" fill="#00add8" />
+    <rect x="330.83" y="352" width="99.32" height="14" fill="#e34c26" />
+    <rect x="430.15" y="352" width="8.53" height="14" fill="#178600" />
+    <rect x="438.68" y="352" width="5.85" height="14" fill="#3572a5" />
+    <rect x="444.53" y="352" width="4.66" height="14" fill="#f34b7d" />
+    <rect x="449.20" y="352" width="3.88" height="14" fill="#b07219" />
+    <rect x="453.08" y="352" width="2.92" height="14" fill="#8c959f" />
   </g>
   <circle cx="29" cy="395" r="4" fill="#00add8" /><text class="body" x="41" y="400">Go</text><text class="small" x="208" y="400" text-anchor="end">7.99 MB · 71.0%</text>
   <circle cx="29" cy="423" r="4" fill="#e34c26" /><text class="body" x="41" y="428">HTML</text><text class="small" x="208" y="428" text-anchor="end">2.58 MB · 23.0%</text>
