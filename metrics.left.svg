@@ -1,83 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="700" viewBox="0 0 480 700" role="img" aria-labelledby="title desc">
-  <title id="title">wzacolemak GitHub metrics</title>
-  <desc id="desc">GitHub activity, community statistics and most used languages for wzacolemak.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="540" viewBox="0 0 480 540" role="img" aria-labelledby="title desc">
+  <title id="title">wzacolemak activity, community and languages</title>
+  <desc id="desc">A compact snapshot of GitHub activity, community statistics and most used languages.</desc>
   <style>
     .bg { fill: #ffffff; stroke: #d0d7de; }
-    .title { fill: #24292f; font: 700 23px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .sub { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .section { fill: #24292f; font: 700 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .metric { fill: #24292f; font: 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .muted { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .lang { fill: #24292f; font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .percent { fill: #57606a; font: 13px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .line { stroke: #d8dee4; }
-    .bar { fill: #0969da; }
+    .panel { fill: #f6f8fa; }
+    .title { fill: #24292f; font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .sub { fill: #57606a; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .section { fill: #24292f; font: 700 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .value { fill: #0969da; font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .label { fill: #57606a; font: 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .lang { fill: #24292f; font: 600 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .percent { fill: #57606a; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .bar-bg { fill: #d8dee4; }
+    .bar { fill: #0969da; }
+    .line { stroke: #d8dee4; }
     @media (prefers-color-scheme: dark) {
       .bg { fill: #0d1117; stroke: #30363d; }
-      .title, .section, .metric, .lang { fill: #f0f6fc; }
-      .sub, .muted, .percent { fill: #8b949e; }
-      .line { stroke: #30363d; }
-      .bar { fill: #58a6ff; }
-      .bar-bg { fill: #30363d; }
+      .panel { fill: #161b22; }
+      .title, .section, .lang { fill: #f0f6fc; }
+      .sub, .label, .percent { fill: #8b949e; }
+      .value, .bar { fill: #58a6ff; }
+      .bar-bg, .line { fill: #30363d; stroke: #30363d; }
     }
   </style>
-  <rect class="bg" x="1" y="1" width="478" height="698" rx="10" />
+  <rect class="bg" x="1" y="1" width="478" height="538" rx="10" />
 
-  <text class="title" x="28" y="43">wzacolemak</text>
-  <text class="sub" x="28" y="67">Joined GitHub 6 years ago · Followed by 4 users</text>
-  <text class="sub" x="28" y="87">Contributed to 4 repositories in the last 12 months</text>
-  <line class="line" x1="28" y1="108" x2="452" y2="108" />
+  <text class="title" x="28" y="40">wzacolemak</text>
+  <text class="sub" x="28" y="61">GitHub activity · community · languages</text>
 
-  <text class="section" x="28" y="140">Activity</text>
-  <text class="sub" x="112" y="140">last 12 months</text>
-  <text class="metric" x="28" y="169">14 Commits</text>
-  <text class="metric" x="183" y="169">0 PR reviews</text>
-  <text class="metric" x="334" y="169">4 PRs opened</text>
-  <text class="metric" x="28" y="196">3 Issues opened</text>
-  <text class="metric" x="183" y="196">8 Issues / PRs commented</text>
-  <line class="line" x1="28" y1="218" x2="452" y2="218" />
+  <text class="section" x="28" y="97">Activity</text>
+  <text class="sub" x="112" y="97">last 12 months</text>
+  <rect class="panel" x="28" y="111" width="424" height="96" rx="8" />
+  <text class="value" x="61" y="144">14</text><text class="label" x="61" y="163">commits</text>
+  <text class="value" x="198" y="144">4</text><text class="label" x="198" y="163">PRs opened</text>
+  <text class="value" x="337" y="144">3</text><text class="label" x="337" y="163">issues opened</text>
+  <text class="value" x="61" y="187">8</text><text class="label" x="61" y="198">commented items</text>
+  <text class="value" x="198" y="187">0</text><text class="label" x="198" y="198">PR reviews</text>
 
-  <text class="section" x="28" y="250">Community stats</text>
-  <text class="metric" x="28" y="279">Member of 2 organizations</text>
-  <text class="metric" x="261" y="279">Following 9 users</text>
-  <text class="metric" x="28" y="306">Sponsoring 0 repositories</text>
-  <text class="metric" x="261" y="306">Starred 38 repositories</text>
-  <text class="metric" x="28" y="333">Watching 1 repository</text>
-  <line class="line" x1="28" y1="355" x2="452" y2="355" />
+  <text class="section" x="28" y="243">Community</text>
+  <text class="sub" x="138" y="243">public profile stats</text>
+  <rect class="panel" x="28" y="257" width="424" height="96" rx="8" />
+  <text class="value" x="61" y="290">2</text><text class="label" x="61" y="309">organizations</text>
+  <text class="value" x="198" y="290">9</text><text class="label" x="198" y="309">following</text>
+  <text class="value" x="337" y="290">38</text><text class="label" x="337" y="309">starred repos</text>
+  <text class="value" x="61" y="333">1</text><text class="label" x="61" y="344">watching</text>
+  <text class="value" x="198" y="333">4</text><text class="label" x="198" y="344">followers</text>
 
-  <text class="section" x="28" y="387">20 Languages</text>
-  <text class="sub" x="164" y="387">most used by tracked file bytes</text>
-
-  <text class="lang" x="28" y="419">TypeScript</text>
-  <text class="percent" x="422" y="419" text-anchor="end">65.2%</text>
-  <rect class="bar-bg" x="28" y="428" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="428" width="276" height="7" rx="3.5" />
-
-  <text class="lang" x="28" y="462">Go</text>
-  <text class="percent" x="422" y="462" text-anchor="end">17.2%</text>
-  <rect class="bar-bg" x="28" y="471" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="471" width="73" height="7" rx="3.5" />
-
-  <text class="lang" x="28" y="505">HTML</text>
-  <text class="percent" x="422" y="505" text-anchor="end">5.6%</text>
-  <rect class="bar-bg" x="28" y="514" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="514" width="24" height="7" rx="3.5" />
-
-  <text class="lang" x="28" y="548">C++</text>
-  <text class="percent" x="422" y="548" text-anchor="end">4.8%</text>
-  <rect class="bar-bg" x="28" y="557" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="557" width="20" height="7" rx="3.5" />
-
-  <text class="lang" x="28" y="591">C#</text>
-  <text class="percent" x="422" y="591" text-anchor="end">4.5%</text>
-  <rect class="bar-bg" x="28" y="600" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="600" width="19" height="7" rx="3.5" />
-
-  <text class="lang" x="28" y="634">Python</text>
-  <text class="percent" x="422" y="634" text-anchor="end">1.7%</text>
-  <rect class="bar-bg" x="28" y="643" width="424" height="7" rx="3.5" />
-  <rect class="bar" x="28" y="643" width="7" height="7" rx="3.5" />
-
-  <text class="muted" x="28" y="680">Snapshot generated 2026-07-16</text>
+  <text class="section" x="28" y="389">Languages</text>
+  <text class="sub" x="140" y="389">top 5 by tracked file bytes</text>
+  <text class="lang" x="28" y="419">TypeScript</text><text class="percent" x="220" y="419" text-anchor="end">65.2%</text>
+  <rect class="bar-bg" x="28" y="427" width="192" height="6" rx="3" /><rect class="bar" x="28" y="427" width="125" height="6" rx="3" />
+  <text class="lang" x="28" y="448">Go</text><text class="percent" x="220" y="448" text-anchor="end">17.2%</text>
+  <rect class="bar-bg" x="28" y="456" width="192" height="6" rx="3" /><rect class="bar" x="28" y="456" width="33" height="6" rx="3" />
+  <text class="lang" x="28" y="477">HTML</text><text class="percent" x="220" y="477" text-anchor="end">5.6%</text>
+  <rect class="bar-bg" x="28" y="485" width="192" height="6" rx="3" /><rect class="bar" x="28" y="485" width="11" height="6" rx="3" />
+  <text class="lang" x="250" y="419">C++</text><text class="percent" x="452" y="419" text-anchor="end">4.8%</text>
+  <rect class="bar-bg" x="250" y="427" width="202" height="6" rx="3" /><rect class="bar" x="250" y="427" width="10" height="6" rx="3" />
+  <text class="lang" x="250" y="448">C#</text><text class="percent" x="452" y="448" text-anchor="end">4.5%</text>
+  <rect class="bar-bg" x="250" y="456" width="202" height="6" rx="3" /><rect class="bar" x="250" y="456" width="9" height="6" rx="3" />
+  <text class="lang" x="250" y="477">Python</text><text class="percent" x="452" y="477" text-anchor="end">1.7%</text>
+  <rect class="bar-bg" x="250" y="485" width="202" height="6" rx="3" /><rect class="bar" x="250" y="485" width="4" height="6" rx="3" />
+  <text class="sub" x="28" y="519">Snapshot generated 2026-07-16</text>
 </svg>
