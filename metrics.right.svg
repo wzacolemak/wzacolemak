@@ -36,6 +36,6 @@
   <text class="name" x="64" y="307">Curator</text><text class="body" x="64" y="326">Starred 37 public repositories</text>
   <line class="rule" x1="24" y1="350" x2="456" y2="350" />
   <text class="heading" x="24" y="380">Featured projects</text>
-  <circle cx="30" cy="405" r="4" fill="#00add8" /><text class="name" x="42" y="410">cli-proxy-api-gateway-extensions</text><text class="small" x="42" y="428">Go · updated Jul 2026</text>
+  <circle cx="30" cy="405" r="4" fill="#3572a5" /><text class="name" x="42" y="410">ArknightsTimelineTool</text><text class="small" x="42" y="428">Python · updated Jul 2026</text>
   <circle cx="30" cy="448" r="4" fill="#f34b7d" /><text class="name" x="42" y="453">MaaAssistantArknights</text><text class="small" x="42" y="471">C++ · updated Jul 2026</text>
 </svg>
