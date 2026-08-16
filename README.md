@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img width="400" align="top" src="./metrics.left.svg?v=202608150153" alt="GitHub overview" />
+  <img width="400" align="top" src="./metrics.left.svg?v=202608160200" alt="GitHub overview" />
   &emsp;
-  <img width="400" align="top" src="./metrics.right.svg?v=202608150153" alt="Profile highlights and featured projects" />
+  <img width="400" align="top" src="./metrics.right.svg?v=202608160200" alt="Profile highlights and featured projects" />
 </p>
