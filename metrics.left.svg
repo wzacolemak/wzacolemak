@@ -34,7 +34,7 @@
   <line class="rule" x1="24" y1="82" x2="456" y2="82" />
   <text class="heading" x="24" y="112">Activity</text>
   <text class="small" x="92" y="112">accumulated since joining GitHub</text>
-  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">67 commits</text>
+  <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">73 commits</text>
   <circle cx="178" cy="137" r="4" fill="#8250df" /><text class="strong" x="190" y="142">7 pull requests</text>
   <circle cx="348" cy="137" r="4" fill="#1a7f37" /><text class="strong" x="360" y="142">4 issues</text>
   <circle cx="30" cy="166" r="4" fill="#bf8700" /><text class="strong" x="42" y="171">11 commented items</text>
@@ -53,18 +53,18 @@
   <text class="small" x="136" y="336">most used by tracked file bytes</text>
   <rect class="muted-bar" x="24" y="352" width="432" height="14" rx="7" />
   <g clip-path="url(#language-bar)">
-    <rect x="24.00" y="352" width="335.90" height="14" fill="#00add8" />
-    <rect x="359.90" y="352" width="74.62" height="14" fill="#e34c26" />
-    <rect x="434.52" y="352" width="8.66" height="14" fill="#3572a5" />
-    <rect x="443.18" y="352" width="4.83" height="14" fill="#178600" />
-    <rect x="448.01" y="352" width="2.90" height="14" fill="#f34b7d" />
-    <rect x="450.91" y="352" width="2.82" height="14" fill="#b07219" />
-    <rect x="453.73" y="352" width="2.27" height="14" fill="#8c959f" />
+    <rect x="24.00" y="352" width="342.00" height="14" fill="#00add8" />
+    <rect x="366.00" y="352" width="69.89" height="14" fill="#e34c26" />
+    <rect x="435.89" y="352" width="8.11" height="14" fill="#3572a5" />
+    <rect x="444.00" y="352" width="4.52" height="14" fill="#178600" />
+    <rect x="448.52" y="352" width="2.72" height="14" fill="#f34b7d" />
+    <rect x="451.24" y="352" width="2.64" height="14" fill="#b07219" />
+    <rect x="453.87" y="352" width="2.13" height="14" fill="#8c959f" />
   </g>
-  <circle cx="29" cy="395" r="4" fill="#00add8" /><text class="body" x="41" y="400">Go</text><text class="small" x="208" y="400" text-anchor="end">12.04 MB · 77.8%</text>
-  <circle cx="29" cy="423" r="4" fill="#e34c26" /><text class="body" x="41" y="428">HTML</text><text class="small" x="208" y="428" text-anchor="end">2.68 MB · 17.3%</text>
-  <circle cx="29" cy="451" r="4" fill="#3572a5" /><text class="body" x="41" y="456">Python</text><text class="small" x="208" y="456" text-anchor="end">310.4 kB · 2.0%</text>
-  <circle cx="251" cy="395" r="4" fill="#178600" /><text class="body" x="263" y="400">C#</text><text class="small" x="456" y="400" text-anchor="end">173.1 kB · 1.1%</text>
-  <circle cx="251" cy="423" r="4" fill="#f34b7d" /><text class="body" x="263" y="428">C++</text><text class="small" x="456" y="428" text-anchor="end">104.1 kB · 0.7%</text>
-  <circle cx="251" cy="451" r="4" fill="#b07219" /><text class="body" x="263" y="456">Java</text><text class="small" x="456" y="456" text-anchor="end">101.0 kB · 0.7%</text>
+  <circle cx="29" cy="395" r="4" fill="#00add8" /><text class="body" x="41" y="400">Go</text><text class="small" x="208" y="400" text-anchor="end">13.09 MB · 79.2%</text>
+  <circle cx="29" cy="423" r="4" fill="#e34c26" /><text class="body" x="41" y="428">HTML</text><text class="small" x="208" y="428" text-anchor="end">2.68 MB · 16.2%</text>
+  <circle cx="29" cy="451" r="4" fill="#3572a5" /><text class="body" x="41" y="456">Python</text><text class="small" x="208" y="456" text-anchor="end">310.4 kB · 1.9%</text>
+  <circle cx="251" cy="395" r="4" fill="#178600" /><text class="body" x="263" y="400">C#</text><text class="small" x="456" y="400" text-anchor="end">173.1 kB · 1.0%</text>
+  <circle cx="251" cy="423" r="4" fill="#f34b7d" /><text class="body" x="263" y="428">C++</text><text class="small" x="456" y="428" text-anchor="end">104.1 kB · 0.6%</text>
+  <circle cx="251" cy="451" r="4" fill="#b07219" /><text class="body" x="263" y="456">Java</text><text class="small" x="456" y="456" text-anchor="end">101.0 kB · 0.6%</text>
 </svg>
