@@ -37,7 +37,7 @@
   <circle cx="30" cy="137" r="4" fill="#0969da" /><text class="strong" x="42" y="142">78 commits</text>
   <circle cx="178" cy="137" r="4" fill="#8250df" /><text class="strong" x="190" y="142">8 pull requests</text>
   <circle cx="348" cy="137" r="4" fill="#1a7f37" /><text class="strong" x="360" y="142">5 issues</text>
-  <circle cx="30" cy="166" r="4" fill="#bf8700" /><text class="strong" x="42" y="171">12 commented items</text>
+  <circle cx="30" cy="166" r="4" fill="#bf8700" /><text class="strong" x="42" y="171">13 commented items</text>
   <circle cx="178" cy="166" r="4" fill="#57606a" /><text class="strong" x="190" y="171">0 reviews</text>
 
   <line class="rule" x1="24" y1="194" x2="456" y2="194" />
