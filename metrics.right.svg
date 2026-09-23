@@ -36,6 +36,6 @@
   <text class="name" x="64" y="307">Curator</text><text class="body" x="64" y="326">Starred 38 public repositories</text>
   <line class="rule" x1="24" y1="350" x2="456" y2="350" />
   <text class="heading" x="24" y="380">Featured projects</text>
-  <circle cx="30" cy="405" r="4" fill="#8250df" /><text class="name" x="42" y="410">cpa-usage-keeper</text><text class="small" x="42" y="428">Repository · updated Sep 2026</text>
-  <circle cx="30" cy="448" r="4" fill="#f34b7d" /><text class="name" x="42" y="453">MaaAssistantArknights</text><text class="small" x="42" y="471">C++ · updated Sep 2026</text>
+  <circle cx="30" cy="405" r="4" fill="#3572a5" /><text class="name" x="42" y="410">nonebot-plugin-cs2radar-enhanced</text><text class="small" x="42" y="428">Python · updated Sep 2026</text>
+  <circle cx="30" cy="448" r="4" fill="#1f883d" /><text class="name" x="42" y="453">cpa-usage-keeper</text><text class="small" x="42" y="471">Repository · updated Sep 2026</text>
 </svg>
