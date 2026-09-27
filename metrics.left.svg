@@ -63,7 +63,7 @@
   </g>
   <circle cx="29" cy="395" r="4" fill="#00add8" /><text class="body" x="41" y="400">Go</text><text class="small" x="208" y="400" text-anchor="end">16.37 MB · 83.9%</text>
   <circle cx="29" cy="423" r="4" fill="#e34c26" /><text class="body" x="41" y="428">HTML</text><text class="small" x="208" y="428" text-anchor="end">2.68 MB · 13.7%</text>
-  <circle cx="29" cy="451" r="4" fill="#3572a5" /><text class="body" x="41" y="456">Python</text><text class="small" x="208" y="456" text-anchor="end">310.8 kB · 1.6%</text>
+  <circle cx="29" cy="451" r="4" fill="#3572a5" /><text class="body" x="41" y="456">Python</text><text class="small" x="208" y="456" text-anchor="end">310.9 kB · 1.6%</text>
   <circle cx="251" cy="395" r="4" fill="#b07219" /><text class="body" x="263" y="400">Java</text><text class="small" x="456" y="400" text-anchor="end">101.0 kB · 0.5%</text>
   <circle cx="251" cy="423" r="4" fill="#f1e05a" /><text class="body" x="263" y="428">JavaScript</text><text class="small" x="456" y="428" text-anchor="end">19.3 kB · 0.1%</text>
   <circle cx="251" cy="451" r="4" fill="#57606a" /><text class="body" x="263" y="456">Markdown</text><text class="small" x="456" y="456" text-anchor="end">17.5 kB · 0.1%</text>
